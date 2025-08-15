@@ -57,8 +57,8 @@ The application follows a simple client-server architecture:
 
 1.  **Clone the repository**:
     ```sh
-    git clone [[Vakya_AI]](https://github.com/Yasaswini38/Vakya-AI)
-    cd [Vakya-AI]https://github.com/Yasaswini38/Vakya-AI
+    git clone https://github.com/Yasaswini38/Vakya-AI
+    cd https://github.com/Yasaswini38/Vakya-AI
     ```
 
 2.  **Install dependencies**:

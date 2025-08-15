@@ -1,0 +1,179 @@
+[
+  {
+    "id": "en-US-natalie",
+    "name": "Natalie",
+    "language": "English (US)"
+  },
+  {
+    "id": "en-US-william",
+    "name": "William",
+    "language": "English (US)"
+  },
+  {
+    "id": "en-US-emma",
+    "name": "Emma",
+    "language": "English (US)"
+
+  },
+  {
+    "id": "en-US-james",
+    "name": "James",
+    "language": "English (US)"
+
+  },
+  {
+    "id": "en-UK-edward",
+    "name": "Edward",
+    "language": "English (UK)"
+    
+  },
+  {
+    "id": "en-UK-amelia",
+    "name": "Amelia",
+    "language": "English (UK)"
+
+  },
+  {
+    "id": "en-AU-olivia",
+    "name": "Olivia",
+    "language": "English (Australian)"
+
+  },
+  {
+    "id": "en-AU-harry",
+    "name": "Harry",
+    "language": "English (Australian)"
+
+  },
+  {
+    "id": "es-ES-sofia",
+    "name": "Sofia",
+    "language": "Spanish (Spain)"
+   
+  },
+  {
+    "id": "es-MX-juan",
+    "name": "Juan",
+    "language": "Spanish (Mexico)"
+  },
+  {
+    "id": "fr-FR-chloe",
+    "name": "Chloé",
+    "language": "French (France)"
+  },
+  {
+    "id": "fr-CA-jean",
+    "name": "Jean",
+    "language": "French (Canada)"
+  },
+  {
+    "id": "de-DE-anna",
+    "name": "Anna",
+    "language": "German"
+  },
+  {
+    "id": "de-DE-lukas",
+    "name": "Lukas",
+    "language": "German"
+  },
+  {
+    "id": "hi-IN-aisha",
+    "name": "Aisha",
+    "language": "Hindi"
+  },
+  {
+    "id": "hi-IN-raj",
+    "name": "Raj",
+    "language": "Hindi"
+  },
+  {
+    "id": "ja-JP-yuki",
+    "name": "Yuki",
+    "language": "Japanese"
+  },
+  {
+    "id": "ko-KR-minjun",
+    "name": "Minjun",
+    "language": "Korean"
+  },
+  {
+    "id": "pt-BR-ana",
+    "name": "Ana",
+    "language": "Portuguese (Brazil)"
+  },
+  {
+    "id": "it-IT-luca",
+    "name": "Luca",
+    "language": "Italian"
+  },
+  {
+    "id": "en-IN-aarav",
+    "name": "Aarav",
+    "language": "English (India)"
+  },
+  {
+    "id": "en-IN-arohi",
+    "name": "Arohi",
+    "language": "English (India)"
+  },
+  {
+    "id": "en-IN-rohan",
+    "name": "Rohan",
+    "language": "English (India)"
+  },
+  {
+    "id": "en-IN-alia",
+    "name": "Alia",
+    "language": "English (India)"
+  },
+  {
+    "id": "en-IN-priya",
+    "name": "Priya",
+    "language": "English (India)"
+  },
+  {
+    "id": "en-IN-isha",
+    "name": "Isha",
+    "language": "English (India)"
+  },
+  {
+    "id": "en-IN-eashwar",
+    "name": "Eashwar",
+    "language": "English (India)"
+  },
+  {
+    "id": "en-US-ronnie",
+    "name": "Ronnie",
+    "language": "English (India), English (US), Bulgarian, Indonesian, Turkish"
+  },
+  {
+    "id": "es-ES-carla",
+    "name": "Carla",
+    "language": "English (India), Spanish (Spain)"
+  },
+  {
+    "id": "ta-IN-iniya",
+    "name": "Iniya",
+    "language": "English (India), Tamil (India)"
+  },
+  {
+    "id": "ta-IN-mani",
+    "name": "Suresh",
+    "language": "English (India), Tamil (India)"
+  },
+  {
+    "id": "bn-IN-ishani",
+    "name": "Ishani",
+    "language": "English (India), Bengali (India)"
+  },
+  {
+    "id": "bn-IN-abhik",
+    "name": "Abhik",
+    "language": "English (India), Bengali (India)"
+  },
+  {
+    "id": "bn-IN-arnab",
+    "name": "Arnab",
+    "language": "English (India), Bengali (India)"
+  }
+]

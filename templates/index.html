@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>వాక్య AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="chat-history-panel">
+      <button id="newChatBtn" class="new-chat-btn">
+        <i class="fas fa-plus"></i> New chat
+      </button>
+      <div class="history-list">
+        <div class="history-item active" data-session-id="new">
+          <div class="history-title-container">
+            <i class="fas fa-comment"></i>
+            <span class="history-title">New Conversation</span>
+          </div>
+          <button class="delete-chat-btn" data-session-id="new">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-interface-panel">
+      <div class="header">
+        <h1>వాక్య AI</h1>
+        <div class="voice-select-container">
+          <select id="voiceSelect" name="voiceId" required>
+            <option value="">--Select Voice--</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="chat-window" id="chatWindow">
+        <div class="status-message">Welcome to వాక్య AI! Start a new conversation or select a voice to begin.</div>
+      </div>
+      
+      <div class="input-container">
+        <div class="text-input-wrapper">
+          <button id="micBtn" class="mic-btn">
+            <i class="fas fa-microphone"></i>
+          </button>
+        </div>
+      </div>
+
+      <audio id="echoAudio" controls style="display:none;"></audio>
+      <div id="echoErrorBox" class="response-box error" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="/static/script.js" defer></script>
+</body>
+</html>

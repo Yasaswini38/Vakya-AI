@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: vakya-ai-voice-agent
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: MURF_API_KEY
+        sync: false
+      - key: ASSEMBLYAI_API_KEY
+        sync: false
+      - key: NEWS_API_KEY
+        sync: false
+    # Render supports WebSockets by default on Web Services.
+    # Make sure your frontend uses wss:// in production.

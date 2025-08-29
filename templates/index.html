@@ -3,13 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>వాక్య AI</title>
+  <title>✨ వాక్య AI 🌸</title>
+
+  <!-- 🎀 Cute Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/style.css">
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="main-container">
+    <!-- Sidebar -->
     <div class="chat-history-panel">
+      <button id="openConfigBtn" class="config-btn">
+    <i class="fas fa-cog"></i> Config
+     
+  </button>
+
+  <!-- Config Container (initially hidden) -->
+  <div id="configContainer" class="config-container">
+  <div class="config-header">
+    <h3>API Configuration</h3>
+    <button id="closeConfigBtn" class="close-btn">✖</button>
+  </div>
+
+  <label for="geminiKeyInput">Gemini API Key</label>
+  <input type="text" id="geminiKeyInput" placeholder="Enter Gemini key" />
+
+  <label for="murfKeyInput">Murf API Key</label>
+  <input type="text" id="murfKeyInput" placeholder="Enter Murf key" />
+
+  <label for="assemblyKeyInput">AssemblyAI API Key</label>
+  <input type="text" id="assemblyKeyInput" placeholder="Enter AssemblyAI key" />
+
+  <label for="newsKeyInput">News API Key</label>
+  <input type="text" id="newsKeyInput" placeholder="Enter News key" />
+
+  <button id="saveKeysBtn">Save Keys</button>
+</div>
+
       <button id="newChatBtn" class="new-chat-btn">
         <i class="fas fa-plus"></i> New chat
       </button>
@@ -26,18 +58,37 @@
       </div>
     </div>
 
+    <!-- Chat Interface -->
     <div class="chat-interface-panel">
       <div class="header">
-        <h1>వాక్య AI</h1>
-        <div class="voice-select-container">
-          <select id="voiceSelect" name="voiceId" required>
-            <option value="">--Select Voice--</option>
-          </select>
+        <!-- 🌸 Cute Header -->
+        <h1>✨ వాక్య AI 🌸</h1>
+        <div class="header-right">
+          <div class="voice-select-container">
+            <label for="voiceSelect"><strong>Voice:</strong></label>
+            <select id="voiceSelect" name="voiceId" required>
+              <option value="">--Select Voice--</option>
+            </select>
+          </div>
+
+          <div class="persona-select-container">
+            <label for="personaSelect"><strong>Persona:</strong></label>
+            <select id="personaSelect" name="persona">
+              <option value="friendly">Friendly</option>
+              <option value="pirate">Pirate</option>
+              <option value="cowboy">Cowboy</option>
+              <option value="robot">Robot</option>
+              <option value="doraemon">Doraemon</option>
+              <option value="shinchan">Shinchan</option>
+              <option value="nobita">Nobita</option>
+              <option value="pikachu">Pikachu</option>
+            </select>
+          </div>
         </div>
       </div>
       
       <div class="chat-window" id="chatWindow">
-        <div class="status-message">Welcome to వాక్య AI! Start a new conversation or select a voice to begin.</div>
+        <div class="status-message">Welcome to ✨ వాక్య AI 🌸! Start a new conversation or select a voice to begin.</div>
       </div>
       
       <div class="input-container">
@@ -53,6 +104,6 @@
     </div>
   </div>
 
-  <script src="/static/script.js" defer></script>
+  <script src="/static/index.js" defer></script>
 </body>
 </html>

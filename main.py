@@ -197,7 +197,7 @@ def is_joke_intent(text: str) -> bool:
 
 def get_joke():
     jokes = [
-        "Why don’t programmers like nature? Because it has too many bugs.",
+        "Why don't programmers like nature? Because it has too many bugs.",
         "Why did the computer go to the doctor? Because it caught a virus!",
         "Why do Java developers wear glasses? Because they don’t see sharp.",
         "I told my laptop a joke, but it didn’t laugh. It just gave me a byte.",

@@ -288,7 +288,8 @@ document.getElementById("saveKeysBtn").onclick = () => {
 
     echoErrorBox.style.display = "none";
     // Connect with updated persona and voice
-    socket = new WebSocket(`ws://127.0.0.1:8000/ws?persona=${selectedPersona}&voice=${selectedVoice}`);
+      const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
+      socket = new WebSocket(`${protocol}//${window.location.host}/ws?persona=${selectedPersona}&voice=${selectedVoice}`);
 
     socket.onopen = () => {
       console.log("WebSocket connected");

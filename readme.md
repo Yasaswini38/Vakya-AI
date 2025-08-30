@@ -9,24 +9,25 @@ That’s **Vākya** , a full loop of human-like conversation, built with **Pytho
 
 ### Features 
 
-* **Voice-to-Voice Interaction**: Talk to the AI and hear its response back.
-* **Real-time Transcription**: See your speech transcribed into text.
-* **Conversational Memory**: The AI maintains context throughout the conversation.
-* **Session Management**: Start new chats or revisit old ones.
-* **Voice Customization**: Select from a variety of voices for the AI's responses.
-* **Modern UI**: A responsive, clean user interface with a chat history panel.
+* **Voice-to-Voice Interaction**: Talk to the AI and hear it respond back in real time.  
+* **Real-time Transcription**: See your speech transcribed instantly on screen.  
+* **Conversational Memory**: Maintains context within a session for natural dialogue.  
+* **Session Management**: Start new chats or revisit past conversations.  
+* **Voice Customization**: Choose from multiple voices for responses.  
+* **Fun Skills Built-in**: Weather updates, News headlines, Jokes on demand.  
+* **Modern UI**: Cute & aesthetic responsive interface with chat history panel.
 
 ***
 
 ### Technologies Used 
 
-* **FastAPI**: A modern, high-performance web framework for the backend.
-* **Jinja2**: For rendering HTML templates.
-* **AssemblyAI**: Handles the **speech-to-text** (transcription) of user audio.
-* **Google Gemini**: The **Large Language Model** that processes the user's query and generates a text response.
-* **Murf.ai**: The **text-to-speech** (TTS) engine that converts the AI's response into natural-sounding audio.
-* **`python-dotenv`**: Manages environment variables for API keys.
-* **HTML, CSS, JavaScript**: For the frontend user interface.
+* **FastAPI** — backend framework for REST + WebSocket support  
+* **Jinja2** — template rendering for frontend  
+* **AssemblyAI** — speech-to-text (transcription)  
+* **Google Gemini** — LLM for text generation  
+* **Murf.ai** — text-to-speech (streaming natural voices)  
+* **python-dotenv** — for managing API keys securely  
+* **HTML, CSS, JavaScript** — responsive UI (with chat history, persona selection)
 
 ***
 
@@ -34,14 +35,12 @@ That’s **Vākya** , a full loop of human-like conversation, built with **Pytho
 
 The application follows a simple client-server architecture:
 
-1.  The user's microphone records their voice input.
-2.  The audio is sent to the FastAPI backend.
-3.  FastAPI uses the **AssemblyAI** API to transcribe the audio into text.
-4.  The transcribed text, along with the conversation history, is sent to the **Google Gemini** API.
-5.  Gemini generates a text response.
-6.  The text response is sent to the **Murf.ai** API, which generates an audio file.
-7.  The URL for the audio file is returned to the frontend.
-8.  The frontend displays the transcribed user message, the AI's text response, and plays the generated audio.
+1. User’s voice recorded via browser microphone  
+2. Audio streamed to FastAPI backend over WebSocket  
+3. AssemblyAI transcribes speech → text  
+4. Transcribed text + history → Gemini (LLM) for response generation  
+5. Response text → Murf.ai → natural voice audio stream  
+6. Frontend shows transcription, AI’s reply, and plays back the audio  
 
 ***
 
@@ -72,6 +71,7 @@ The application follows a simple client-server architecture:
     MURF_API_KEY="YOUR_MURF_API_KEY"
     ASSEMBLYAI_API_KEY="YOUR_ASSEMBLYAI_API_KEY"
     GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+    NEWS_API_KEY="YOUR_NEWS_API_KEY"
     ```
 
 4.  **Run the application**:

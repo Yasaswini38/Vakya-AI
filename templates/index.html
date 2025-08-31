@@ -16,31 +16,30 @@
     <!-- Sidebar -->
     <div class="chat-history-panel">
       <button id="openConfigBtn" class="config-btn">
-    <i class="fas fa-cog"></i> Config
-     
-  </button>
+        <i class="fas fa-cog"></i> Config
+      </button>
 
-  <!-- Config Container (initially hidden) -->
-  <div id="configContainer" class="config-container">
-  <div class="config-header">
-    <h3>API Configuration</h3>
-    <button id="closeConfigBtn" class="close-btn">✖</button>
-  </div>
+      <!-- Config Container (initially hidden) -->
+      <div id="configContainer" class="config-container">
+        <div class="config-header">
+          <h3>API Configuration</h3>
+          <button id="closeConfigBtn" class="close-btn">✖</button>
+        </div>
 
-  <label for="geminiKeyInput">Gemini API Key</label>
-  <input type="text" id="geminiKeyInput" placeholder="Enter Gemini key" />
+        <label for="geminiKeyInput">Gemini API Key</label>
+        <input type="text" id="geminiKeyInput" placeholder="Enter Gemini key" />
 
-  <label for="murfKeyInput">Murf API Key</label>
-  <input type="text" id="murfKeyInput" placeholder="Enter Murf key" />
+        <label for="murfKeyInput">Murf API Key</label>
+        <input type="text" id="murfKeyInput" placeholder="Enter Murf key" />
 
-  <label for="assemblyKeyInput">AssemblyAI API Key</label>
-  <input type="text" id="assemblyKeyInput" placeholder="Enter AssemblyAI key" />
+        <label for="assemblyKeyInput">AssemblyAI API Key</label>
+        <input type="text" id="assemblyKeyInput" placeholder="Enter AssemblyAI key" />
 
-  <label for="newsKeyInput">News API Key</label>
-  <input type="text" id="newsKeyInput" placeholder="Enter News key" />
+        <label for="newsKeyInput">News API Key</label>
+        <input type="text" id="newsKeyInput" placeholder="Enter News key" />
 
-  <button id="saveKeysBtn">Save Keys</button>
-</div>
+        <button id="saveKeysBtn">Save Keys</button>
+      </div>
 
       <button id="newChatBtn" class="new-chat-btn">
         <i class="fas fa-plus"></i> New chat
@@ -83,41 +82,38 @@
               <option value="nobita">Nobita</option>
               <option value="pikachu">Pikachu</option>
             </select>
-            </div>
+          </div>
 
-  <!-- Murf branding badge -->
-  <a
-    class="murf-badge"
-    href="https://murf.ai/api/docs/introduction/overview"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Powered by Murf"
-  >
-    <img
-      src="https://unpkg.com/simple-icons@latest/icons/murfai.svg"
-      onerror="this.style.display='none'"
-      alt=""
-      style="width:16px;height:16px;margin-right:6px;vertical-align:middle;"
-    />
-    Powered by Murf
-  </a>
+          <!-- Murf branding badge -->
+          <a
+            class="murf-badge"
+            href="https://murf.ai/api/docs/introduction/overview"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Powered by Murf"
+          >
+            <img
+              src="https://unpkg.com/simple-icons@latest/icons/murfai.svg"
+              onerror="this.style.display='none'"
+              alt=""
+              style="width:16px;height:16px;margin-right:6px;vertical-align:middle;"
+            />
+            Powered by Murf
+          </a>
 
-  <!-- GitHub repo button -->
-  <a
-    class="github-btn"
-    href="https://github.com/Yasaswini38/Vakya-AI"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="View GitHub Repo"
-  >
-    <i class="fab fa-github"></i> Repo
-  </a>
-</div>
-
-          
+          <!-- GitHub repo button -->
+          <a
+            class="github-btn"
+            href="https://github.com/Yasaswini38/Vakya-AI"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View GitHub Repo"
+          >
+            <i class="fab fa-github"></i> Repo
+          </a>
         </div>
       </div>
-      
+
       <div class="chat-window" id="chatWindow">
         <div class="status-message">Welcome to ✨ వాక్య AI 🌸! Start a new conversation or select a voice to begin.</div>
       </div>

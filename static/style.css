@@ -388,3 +388,55 @@ body {
   transform: scale(1.2);
   color: #ff1493;
 }
+
+.murf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 14px;
+  border: 2px dashed var(--border-color);
+  background: #fff;
+  font-size: 0.85em;
+  color: #ff69b4;
+  text-decoration: none;
+  box-shadow: var(--shadow-soft);
+  transition: transform .15s ease, background .15s ease;
+  margin-left: 6px;
+}
+.murf-badge:hover { transform: translateY(-1px) scale(1.02); background: #fff0f6; }
+
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 14px;
+  border: 2px dashed #cdeaff;
+  background: #fff;
+  font-size: 0.85em;
+  color: #333;
+  text-decoration: none;
+  box-shadow: var(--shadow-soft);
+  margin-left: 6px;
+  transition: transform .15s ease, background .15s ease;
+}
+.github-btn:hover { transform: translateY(-1px) scale(1.02); background: #e6f7ff; }
+
+/* Optional fixed corner badge */
+.murf-corner {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 999;
+  padding: 8px 12px;
+  border-radius: 16px;
+  background: #fff;
+  border: 2px dashed var(--border-color);
+  font-size: 0.85em;
+  color: #ff69b4;
+  text-decoration: none;
+  box-shadow: var(--shadow-hover);
+}
+.murf-corner:hover { background: #ffe6f1; }
+

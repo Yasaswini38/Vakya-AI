@@ -11,6 +11,8 @@ That’s **Vākya** , a full loop of human-like conversation, built with **Pytho
 
 [![Watch the demo](https://raw.githubusercontent.com/Yasaswini38/Vakya-AI/main/thumbnail.jpg)](https://raw.githubusercontent.com/Yasaswini38/Vakya-AI/main/demo_vakyaai.mp4)
 
+***
+
 ### Features 
 
 * **Voice-to-Voice Interaction**: Talk to the AI and hear it respond back in real time.  

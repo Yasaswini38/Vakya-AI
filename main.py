@@ -542,4 +542,6 @@ if __name__ == "__main__":
     if missing:
         logging.warning(f"Missing API keys: {', '.join(missing)}")
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+if __name__ == '__main__':
+    app.run(debug=True)
+

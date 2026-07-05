@@ -1,5 +1,3 @@
-Markdown
-
 # Vākya AI 🗣️
 
 Vākya, which means "sentence" in Sanskrit, is a conversational AI that allows users to interact with a Large Language Model (LLM) using their voice. Speak. Understand. Reply.
